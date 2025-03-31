@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- List View Definition -->
+        <record model="ir.ui.view" id="view_charges_list">
+            <field name="name">Hotel Charges</field>
+            <field name="model">hotel.charges</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="description"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Form View Definition -->
+        <record model="ir.ui.view" id="view_charges_form">
+            <field name="name">Hotel Charge</field>
+            <field name="model">hotel.charges</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record model="ir.actions.act_window" id="action_hotel_charges">
+            <field name="name">Hotel Charges</field>
+            <field name="res_model">hotel.charges</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem name="Hotel Charges"
+          id="hotel_menu_charges"
+          parent="menu_hotel_masterlists"
+          action="action_hotel_charges"
+          sequence="40"/>
+    </data>
+</odoo>

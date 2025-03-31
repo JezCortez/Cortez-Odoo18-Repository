@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Top menu item -->
+        <menuitem name="Hotel" id="menu_hotel_root" sequence="10"/>
+        
+        <!-- Main menu categories -->
+        <menuitem name="Guest Registration" 
+                 id="menu_hotel_guestregistration" 
+                 parent="menu_hotel_root"
+                 sequence="20"/>
+                 
+        <menuitem name="Master Lists" 
+                 id="menu_hotel_masterlists" 
+                 parent="menu_hotel_root"
+                 sequence="30"/>
+    </data>
+</odoo>
