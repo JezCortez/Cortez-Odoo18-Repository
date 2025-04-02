@@ -9,6 +9,7 @@
                 <list>
                     <field name="name"/>
                     <field name="description"/>
+                    <field name="daily_charge"/>
                 </list>
             </field>
         </record>
@@ -23,6 +24,7 @@
                         <group>
                             <field name="name"/>
                             <field name="description"/>
+                            <field name="daily_charge"/>
                         </group>
                         
                         <group string="Photos">
