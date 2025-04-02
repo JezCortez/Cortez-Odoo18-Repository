@@ -14,6 +14,7 @@
                     <field name="email"/>
                     <field name="address_city"/>
                     <field name="address_province"/>
+                    <field name="age"/>
                 </list>
             </field>
         </record>
@@ -30,6 +31,8 @@
                         <field name="middlename"/>
                         <field name="contactno"/>
                         <field name="email"/>
+                        <field name="birthdate"/> <!-- Add birthdate field -->
+                        <field name="age" readonly="1"/> <!-- Add age field (readonly) -->
                     </group>
                     <group>
                         <field name="address_streetno"/>
