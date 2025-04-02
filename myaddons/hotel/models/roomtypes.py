@@ -8,3 +8,4 @@ class RoomTypes(models.Model):
     description = fields.Char("Room Type Description")
     photobed = fields.Image("Bed Photo")
     photorestroom = fields.Image("Comfort Room Photo")
+    daily_charge = fields.Float("Daily Charge")
