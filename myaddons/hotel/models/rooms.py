@@ -7,3 +7,5 @@ class Rooms(models.Model):
 
     name = fields.Char(string="Room No.", required=True)
     description = fields.Char(string="Room Description")
+    roomtype_id = fields.Many2one('hotel.roomtypes', string="Room Type", required=True)
+    roomtype_name = fields.Char(string="Room Type Name", related='roomtype_id.name', store=True, readonly=True)
