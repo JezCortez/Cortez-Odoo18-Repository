@@ -9,6 +9,7 @@ Cortez Odoo18 Repository
 I'll keep updating this for the future additions to the Odoo activities, changes are noted on the commit description.
 
 please disregard the "themes" in this repo (problematic interactions with the application)
+
 ***Update: Current version is updated until activity 11, please go to the Ex-11 branch***
 - [x] Activity 1 - odoo setup and file stucture
 - [x] Activity 2 - odoo module initialization
