@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- List View Definition -->
+        <record id="view_guests_list" model="ir.ui.view">
+            <field name="name">Hotel Guests</field>
+            <field name="model">hotel.guests</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="contactno"/>
+                    <field name="email"/>
+                    <field name="address_city"/>
+                    <field name="address_province"/>
+<<<<<<< HEAD
+                    <field name="age"/>
+=======
+                    <field name="age"/> <!-- Added age field -->
+>>>>>>> 3c227570 (updated to exercise 12/13 with pgAdmin changes)
+                </list>
+            </field>
+        </record>
+
+        <!-- Form View Definition -->
+        <record id="view_guests_form" model="ir.ui.view">
+            <field name="name">Hotel Guest</field>
+            <field name="model">hotel.guests</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="lastname"/>
+                        <field name="firstname"/>
+                        <field name="middlename"/>
+                        <field name="contactno"/>
+                        <field name="email"/>
+                        <field name="birthdate"/> <!-- Add birthdate field -->
+                        <field name="age" readonly="1"/> <!-- Add age field (readonly) -->
+                    </group>
+                    <group>
+                        <field name="address_streetno"/>
+                        <field name="address_area"/>
+                        <field name="address_city"/>
+                        <field name="address_province"/>
+                        <field name="zipcode"/>
+                    </group>
+                    <group>
+                        <field name="gender"/>
+                        <field name="birthdate"/>
+                        <field name="age" readonly="1"/> <!-- Added age field -->
+                        <field name="photo" widget="image"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_hotel_guests" model="ir.actions.act_window">
+            <field name="name">Guests</field>
+            <field name="res_model">hotel.guests</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem name="Guests"
+          id="hotel_menu_guests"
+          parent="menu_hotel_masterlists"
+          action="action_hotel_guests"
+          sequence="40"/>
+    </data>
+</odoo>

@@ -1,0 +1,8 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_hotel_charges","hotel.charges","model_hotel_charges","base.group_user","1","1","1","1"
+"access_hotel_roomtypes","access_hotel_roomtypes","model_hotel_roomtypes","","1","1","1","1"
+"access_hotel_rooms","access_hotel_rooms","model_hotel_rooms","","1","1","1","1"
+"access_hotel_guests","access_hotel_guests","model_hotel_guests","","1","1","1","1"
+access_hotel_dailycharges,hotel.dailycharges,model_hotel_dailycharges,base.group_user,1,1,1,1
+access_hotel_guestregistration_user,hotel.guestregistration user,model_hotel_guestregistration,base.group_user,1,1,1,1
+access_hotel_roomtype_charge_history,hotel.roomtype.charge.history,model_hotel_roomtype_charge_history,base.group_user,1,1,1,1

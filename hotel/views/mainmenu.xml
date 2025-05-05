@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Main menu: Hotel -->
+        <menuitem id="menu_hotel_root" name="Hotel" sequence="10"/>
+
+        <!-- Navbar: Guest Registration -->
+        <menuitem id="menu_hotel_guestregistration"
+                  name="Guest Registration"
+                  parent="menu_hotel_root"
+                  action="action_hotel_guestregistration"
+                  sequence="10"/>
+
+        <!-- Navbar: Masterlists -->
+        <menuitem id="menu_hotel_masterlists"
+                  name="Masterlists"
+                  parent="menu_hotel_root"
+                  sequence="20"/>
+
+        <!-- Masterlists children -->
+        <menuitem id="hotel_menu_rooms"
+                  name="Rooms"
+                  parent="menu_hotel_masterlists"
+                  action="action_hotel_rooms"
+                  sequence="10"/>
+        <menuitem id="hotel_menu_roomtypes"
+                  name="Room Types"
+                  parent="menu_hotel_masterlists"
+                  action="action_hotel_roomtypes"
+                  sequence="20"/>
+        <menuitem id="hotel_menu_charges"
+                  name="Charges"
+                  parent="menu_hotel_masterlists"
+                  action="action_hotel_charges"
+                  sequence="30"/>
+        <menuitem id="hotel_menu_guests"
+                  name="Guests"
+                  parent="menu_hotel_masterlists"
+                  action="action_hotel_guests"
+                  sequence="40"/>
+    </data>
+</odoo>
