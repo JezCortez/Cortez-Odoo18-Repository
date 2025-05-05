@@ -6,11 +6,26 @@
 Cortez Odoo18 Repository
 ----
 
-I'll keep updating this for the future additions to the Odoo activities, changes are noted on the commit description.
+> [!NOTE]
+> please disregard the "themes" in this repo (problematic interactions with the application)
+> 
+> ***Update: Current version is updated to final exercise 12/13, please read below on how to incoporate the sql functions on pgAdmin.***
 
-please disregard the "themes" in this repo (problematic interactions with the application)
+> [!IMPORTANT]
+> **Please read me: Steps on how to add the sql in pgAdmin**
+>
+> Method 1: copy paste
+> 1. copy the sql files in the sql folder
+> 2. open pgAdmin and locate query tool
+> 3. paste the file in the query and run the script (`F5` or `ALT + F5`)
+> ----
+> Method 2: execute file
+> 1. download the sql files in the sql folder
+> 2. open pgAdmin and locate query tool
+> 3. open the file in the query tool and run the script (`F5` or `ALT + F5`)
 
-***Update: Current version is updated until activity 11, please go to the Ex-11 branch***
+
+## Checklist
 - [x] Activity 1 - odoo setup and file stucture
 - [x] Activity 2 - odoo module initialization
 - [x] Activity 3 - module roomtype model and view
@@ -22,5 +37,5 @@ please disregard the "themes" in this repo (problematic interactions with the ap
 - [x] Activity 9 - master detail notebook for rooms
 - [x] Activity 10 - guest registration with computed fields
 - [x] Activity 11 - guest registration with button events
-- [ ] Activity 12 - calling postgresql functions
+- [x] Activity 12 - calling postgresql functions
 
