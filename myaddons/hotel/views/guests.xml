@@ -7,14 +7,16 @@
             <field name="model">hotel.guests</field>
             <field name="arch" type="xml">
                 <list>
-                    <field name="lastname"/>
-                    <field name="firstname"/>
-                    <field name="middlename"/>
+                    <field name="name"/>
                     <field name="contactno"/>
                     <field name="email"/>
                     <field name="address_city"/>
                     <field name="address_province"/>
+<<<<<<< HEAD
                     <field name="age"/>
+=======
+                    <field name="age"/> <!-- Added age field -->
+>>>>>>> 3c227570 (updated to exercise 12/13 with pgAdmin changes)
                 </list>
             </field>
         </record>
@@ -44,6 +46,7 @@
                     <group>
                         <field name="gender"/>
                         <field name="birthdate"/>
+                        <field name="age" readonly="1"/> <!-- Added age field -->
                         <field name="photo" widget="image"/>
                     </group>
                 </form>
@@ -60,8 +63,8 @@
         <!-- Menu -->
         <menuitem name="Guests"
           id="hotel_menu_guests"
-          parent="menu_hotel_guestregistration"
+          parent="menu_hotel_masterlists"
           action="action_hotel_guests"
-          sequence="10"/>
+          sequence="40"/>
     </data>
 </odoo>

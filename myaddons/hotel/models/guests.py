@@ -5,7 +5,10 @@ from datetime import date
 class Guests(models.Model):
     _name = 'hotel.guests'
     _description = 'Hotel Guests'
+    _order = 'lastname,firstname,middlename'
 
+    name = fields.Char(string='Full Name', compute='_compute_name', store=True, index=True)
+    
     lastname = fields.Char(string="Lastname", required=True)
     firstname = fields.Char(string="Firstname", required=True)
     middlename = fields.Char(string="Middlename")
@@ -31,3 +34,8 @@ class Guests(models.Model):
                 )
             else:
                 record.age = 0
+                
+    @api.depends('lastname', 'firstname', 'middlename')
+    def _compute_name(self):
+        for record in self:
+            record.name = f"{record.lastname or ''}, {record.firstname or ''} {record.middlename or ''}".strip()
