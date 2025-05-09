@@ -9,9 +9,9 @@ class RoomTypes(models.Model):
     description = fields.Char("Room Type Description")
     photobed = fields.Image("Bed Photo")
     photorestroom = fields.Image("Comfort Room Photo")
-<<<<<<< HEAD
+
     daily_charge = fields.Float("Daily Charge")
-=======
+
     room_image = fields.Image(string="Room Image")
     bathroom_image = fields.Image(string="Bathroom Image")
     daily_charge = fields.Float(string="Daily Charge")
@@ -79,4 +79,3 @@ class RoomTypeChargeHistory(models.Model):
         today = date.today()
         for record in self:
             record.is_current = (record.date_from <= today and (not record.date_to or record.date_to >= today))
->>>>>>> 3c227570 (updated to exercise 12/13 with pgAdmin changes)
