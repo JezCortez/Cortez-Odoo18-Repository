@@ -10,10 +10,8 @@
                     <field name="name"/>
                     <field name="description"/>
                     <field name="daily_charge"/>
-<<<<<<< HEAD
-=======
+
                     <field name="room_capacity"/>
->>>>>>> 3c227570 (updated to exercise 12/13 with pgAdmin changes)
                 </list>
             </field>
         </record>
